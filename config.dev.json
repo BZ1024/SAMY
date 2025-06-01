@@ -1,6 +1,5 @@
 {
-	"facebookAccount": {
-		"email": "",
+	"facebookAccount": {}		"email": "",
 		"password": "",
 		"2FASecret": "",
 		"i_user": "",
@@ -12,13 +11,16 @@
 	"antiInbox": false,
 	"language": "en",
 	"notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
-	"nickNameBot": "GoatBot",
-	"prefix": "-",
+	"nickNameBot": "🤖SAMY BOT🗣️🔈",
+	"prefix": "/",
 	"adminOnly": {
 		"enable": false,
 		"ignoreCommand": []
 	},
-	"adminBot": [],
+	"adminBot": [
+		"61575712077012",
+		""
+	],
 	"whiteListMode": {
 		"enable": false,
 		"whiteListIds": [],
@@ -37,18 +39,18 @@
 		"autoRefreshThreadInfoFirstTime": true,
 		"notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'. If you choose mongodb, enter uri connect mongodb in the uriMongodb section, instructions to get uri connect mongodb at: https://youtu.be/z1f9urHW5xY. I recommend using 'mongodb' or 'sqlite', json is not recommended because it is not stable. (2) when you set autoSyncWhenStart to true, the bot will automatically synchronize the data in the database when starting the bot, this will make the bot start slower. (3) when you set autoRefreshThreadInfoFirstTime to true, the bot will automatically refresh the thread information when get first message from the thread since starting the bot"
 	},
-	"timeZone": "Asia/Ho_Chi_Minh",
+	"timeZone": "Europe/Paris",
 	"credentials": {
 		"gmailAccount": {
-			"email": "",
-			"clientId": "",
-			"clientSecret": "",
-			"refreshToken": "",
+			"email": "sahulrimin@gmail.com",
+			"clientId": "24605262819-7no89dr93lchm0nsnffte6k1girvf254.apps.googleusercontent.com",
+			"clientSecret": "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",
+			"refreshToken": "1//04jo0gL7IHPjJCgYIARAAGAQSNwF-L9IrkbtrhwYvh7OIPCnnbjaX0MGtDJre7DP8-A35eNn1LthF4-VEVT47RPXY9llD0GpQpvU",
 			"apiKey": ""
 		},
 		"gRecaptcha": {
-			"siteKey": "",
-			"secretKey": ""
+			"siteKey": "6LflC2IpAAAAAH0OS-zr79ovyoV3VQPDhwKbrN3H",
+			"secretKey": "6LflC2IpAAAAAM4JOsRl4ZdKZ0ihowTLDfvBe_W4"
 		}
 	},
 	"dashBoard": {
@@ -66,7 +68,7 @@
 		}
 	},
 	"autoRestart": {
-		"time": null,
+		"time": 18000000,
 		"notes": "you can set time is interval with milisecond or cron time, example: 1000, 10000, 60000, 3600000, 86400000, 0 0 * * *,... docs: https://www.npmjs.com/package/node-cron. If you set time is 0 or false or null, the bot will not auto restart"
 	},
 	"autoUptime": {
@@ -76,17 +78,17 @@
 		"notes": "the value of timeInterval is seconds, url is the url you want to send the request to (automatically detected for hosting glitch or replit)"
 	},
 	"autoLoadScripts": {
-		"enable": false,
+		"enable": true,
 		"ignoreCmds": "",
 		"ignoreEvents": "",
 		"notes": "this feature will automatically load the script when scripts have been changed, you can set ignoreCmds to ignore commands, ignoreEvents to ignore events, separate by comma or space, example: \"cmd1.js cmd2.js cmd3.js\" (without backslash)"
 	},
 	"autoRefreshFbstate": true,
-	"autoReloginWhenChangeAccount": false,
-	"autoRestartWhenListenMqttError": false,
+	"autoReloginWhenChangeAccount": true,
+	"autoRestartWhenListenMqttError": true,
 	"restartListenMqtt": {
 		"enable": true,
-		"timeRestart": 3600000,
+		"timeRestart": 20000,
 		"delayAfterStopListening": 2000,
 		"logNoti": true,
 		"notes": "the value of timeRestart and delayAfterStopListening is milisecond, You shouldn't edit this if you don't know what it is"
@@ -142,4 +144,4 @@
 		"autoReconnect": false,
 		"notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
 	}
-}
+	}
