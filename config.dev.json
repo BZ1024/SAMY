@@ -1,5 +1,6 @@
 {
-	"facebookAccount": {}		"email": "",
+	"facebookAccount": {
+		"email": "",
 		"password": "",
 		"2FASecret": "",
 		"i_user": "",
@@ -144,4 +145,4 @@
 		"autoReconnect": false,
 		"notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
 	}
-	}
+}
